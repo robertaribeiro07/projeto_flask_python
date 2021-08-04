@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro</title>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  &nbsp;<a class="navbar-brand" href="#">SISCAD</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link" href="/cad">CADASTRO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/listar">LISTAR</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sobre">SOBRE</a>
+      </li>
+    </ul>
+  </div>
+</nav><br>
+
+    <form action="/cad" method="POST">
+        <CENTER><h1>CADASTRO DE PRODUTOS</h1> <hr><BR><BR>
+        <div class="form-control  border-primary" style="background-color:#FFFFFF;color:black;border:1px solid black;width:400px;height:400px;font-size:18px;"><br>
+        Entre com o código do produto:
+        <input  class="form-control   border-primary" name="id" placeholder="código"/><br>
+        Entre com nome do produto:
+        <input class="form-control  border-primary"  name="nome" placeholder="nome"/><br>
+        Entre com preço do produto:
+        <input class="form-control  border-primary"  name="valor" placeholder="preço"/><br>
+
+            <button class="btn btn-primary" type='submit' >Cadastrar</button><br>
+        <strong> {{msg}}</strong>
+        </div>
+
+
+        </center>
+    </form> <br>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+  </body>
+</html>
